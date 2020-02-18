@@ -17,50 +17,66 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html>
-    
-    <head>
 
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">    
         <title>Hello World</title>
 
     </head>
 
     <body>
-
-        <script>
-            function realizaLogin()
-            {
-                let usuario=document.getElementById("user").value;
-                let senha=document.getElementById("pass").value;
-                
-                let usuarioValido="Vitor";
-                let senhaValido="12345";
-
-                if ((usuario==usuarioValido)&&(senha==senhaValido))
-                {
-                    alert("Bem Vindo");
-                }
-                else
-                {
-                    alert ("Usuario ou senha errados");
-                }
-            }
-        </script>
-
-        </div>
-
         <div>
-            <ul>
-                <li>
-                    usuario <br>
-                    <input type="text"id="user">
-                </li>
-                <li>
-                    senha <br>
-                    <input type="password"id="pass">
-                </li>
-                    <button type="button" onclick="realizaLogin()">Login</button>
-            </ul>
+            
+            <header>
+
+                <script>
+                    function realizaLogin()
+                    {
+                        let usuario=document.getElementById("user").value;
+                        let senha=document.getElementById("pass").value;
+                        
+                        let usuarioValido="Vitor";
+                        let senhaValido="12345";
+
+                        if ((usuario==usuarioValido)&&(senha==senhaValido))
+                        {
+                            alert("Bem Vindo");
+                        }
+                        else
+                        {
+                            alert ("Usuario ou senha errados");
+                        }
+                    }
+                </script>
+
+            </header>
+
+            <div>
+
+                <ul>
+
+                    <li>
+                        Usuario <br>
+                        <input type="text"id="user">
+                    </li>
+
+                    <br>
+
+                    <li>
+                        Senha <br>
+                        <input type="password"id="pass">
+                    </li>
+
+                    <br>
+
+                        <button type="button" onclick="realizaLogin()">Login</button>
+
+                </ul>
+
+            </div>
+
         </div>
 
     </body>
