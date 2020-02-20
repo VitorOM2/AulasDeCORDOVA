@@ -39,22 +39,28 @@
         <div class="form">
 
             <ul>
-                <li>
-                    Usuário <br>
-                    <input type="text"id="usuario">
+                <li id="lilogin">
+                    <b>LOGIN</b>
+                </li>
+
+                <br><br>
+                
+                <li id="liuser">
+                    <label for="usuario"><b>Usuário</b></label><br>
+                    <input type="text"id="usuario" name="usuario">
+                </li>
+
+                <br><br>
+
+                <li id="lisenha">
+                    <label for="senha"><b>Senha</b></label><br>
+                    <input type="password"id="senha" name="senha">
                 </li>
 
                 <br><br>
 
                 <li>
-                    Senha <br>
-                    <input type="password"id="senha">
-                </li>
-
-                <br><br>
-
-                <li>
-                    <button type="button" onclick="realizaLogin()">Login</button>
+                    <button type="button" onclick="realizaLogin()"><b>Login</b></button>
                 </li>
             </ul>
 
