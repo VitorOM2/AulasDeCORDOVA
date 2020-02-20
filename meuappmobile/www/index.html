@@ -17,6 +17,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
+<<<<<<< HEAD
 <html lang="pt-br">
     <head>
  
@@ -28,24 +29,31 @@
         <title>Hello World</title>-->
 
         <meta charset="UTF-8">
+=======
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">    
+        <title>Hello World</title>
+>>>>>>> 4935ba73ddb95ce3fd19d70a530f5552d20ef3a4
 
     </head>
+
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-                
+        <div>
+            
+            <header>
+
                 <script>
                     function realizaLogin()
                     {
-                        let usuario=document.getElementById("usuario").value;
-                        let senha=document.getElementById("senha").value;
-        
+                        let usuario=document.getElementById("user").value;
+                        let senha=document.getElementById("pass").value;
+                        
                         let usuarioValido="Vitor";
-                        let senhaValido="senha123";
-        
+                        let senhaValido="12345";
+
                         if ((usuario==usuarioValido)&&(senha==senhaValido))
                         {
                             alert("Bem Vindo");
@@ -57,9 +65,33 @@
                     }
                 </script>
 
-            </div>
-        </div>
+            </header>
 
+            <div>
+
+                <ul>
+
+                    <li>
+                        Usuario <br>
+                        <input type="text"id="user">
+                    </li>
+
+                    <br>
+
+                    <li>
+                        Senha <br>
+                        <input type="password"id="pass">
+                    </li>
+
+                    <br>
+
+                        <button type="button" onclick="realizaLogin()">Login</button>
+
+                </ul>
+
+            </div>
+
+<<<<<<< HEAD
         <div>
             <ul>
                 <li>
@@ -72,8 +104,9 @@
                 </li>
                     <button type="button" onclick="realizaLogin()">Login</button>
             </ul>
+=======
+>>>>>>> 4935ba73ddb95ce3fd19d70a530f5552d20ef3a4
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+
     </body>
 </html>
