@@ -1,3 +1,14 @@
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.form
 ul
 { 
     list-style-type: none;
