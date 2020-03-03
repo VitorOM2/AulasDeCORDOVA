@@ -13,7 +13,7 @@ var app = {
         this.destinationType=navigator.camera.destinationType;
 
         console.dir(this.pictureSource);
-        console.dir(this.destinationSource);       
+        console.dir(this.destinationType);       
     },
 
     //Função que tira foto
