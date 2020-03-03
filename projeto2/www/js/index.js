@@ -25,15 +25,15 @@ var app = {
         }
 
         //TESTE
-         var options = 
-         {
-            quality:50,
-            destinationType: camera.destinationType.FILE_URI,
-            encodingType: camera.encodingType.JPEG,
-           mediaType: Camera.mediaType.PICTURE,
-            pictureSourceType : 1, //0 = Galeria de fotos/ 1 = Camera / 2 = Album salvo
-           encodingType: 0 //0 = JPG / 1 = PNG
-         };
+        //  var options = 
+        //  {
+        //     quality:50,
+        //     destinationType: camera.destinationType.FILE_URI,
+        //     encodingType: camera.encodingType.JPEG,
+        //    mediaType: Camera.mediaType.PICTURE,
+        //     pictureSourceType : 1, //0 = Galeria de fotos/ 1 = Camera / 2 = Album salvo
+        //    encodingType: 0 //0 = JPG / 1 = PNG
+        //  };
 
         let options2 =
         {
