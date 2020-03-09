@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <script>
+                function realizaLogin()
+                {
+                    let usuario=document.getElementById("usuario").value;
+                    let senha=document.getElementById("senha").value;
+
+                    let usuarioValido="Usuario";
+                    let senhaValido="senha123";
+
+                    if ((usuario==usuarioValido)&&(senha==senhaValido))
+                    {
+                        alert("Bem Vindo");
+                    }
+                    else
+                    {
+                        alert ("Usuario ou senha errados");
+                    }
+                }
+            </script>
+
+        </header>
+
+        <div class="form">
+
+            <ul>
+                <li id="lilogin">
+                    <b>LOGIN</b>
+                </li>
+
+                <br><br>
+                
+                <li id="liuser">
+                    <label for="usuario"><b>Usuário</b></label><br>
+                    <input type="text"id="usuario" name="usuario">
+                </li>
+
+                <br><br>
+
+                <li id="lisenha">
+                    <label for="senha"><b>Senha</b></label><br>
+                    <input type="password"id="senha" name="senha">
+                </li>
+
+                <br><br>
+
+                <li>
+                    <button type="button" onclick="realizaLogin()"><b>Login</b></button>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</body>
+</html>

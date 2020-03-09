@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      "camera-cordova-plugin@2.0.0",
+      "C:\\Users\\Aluno\\AulasDeCORDOVA\\projeto2"
+    ]
+  ],
+  "_from": "camera-cordova-plugin@2.0.0",
+  "_id": "camera-cordova-plugin@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-hJzJRb29u8YGbFcuzLcu4P9aftTJx8FhYdE55PELa2j8Zi/8B58dMvUImLT1UMSilsUymIbYzNNyrepISaJmvQ==",
+  "_location": "/camera-cordova-plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "camera-cordova-plugin@2.0.0",
+    "name": "camera-cordova-plugin",
+    "escapedName": "camera-cordova-plugin",
+    "rawSpec": "2.0.0",
+    "saveSpec": null,
+    "fetchSpec": "2.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/camera-cordova-plugin/-/camera-cordova-plugin-2.0.0.tgz",
+  "_spec": "2.0.0",
+  "_where": "C:\\Users\\Aluno\\AulasDeCORDOVA\\projeto2",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/expcapitaldev/camera-cordova-plugin/issues"
+  },
+  "cordova": {
+    "id": "camera-cordova-plugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "description": "Custom camera for taking photos of documents",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.1.0"
+    }
+  ],
+  "homepage": "https://github.com/expcapitaldev/camera-cordova-plugin#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "Apache 2.0",
+  "name": "camera-cordova-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/expcapitaldev/camera-cordova-plugin.git"
+  },
+  "version": "2.0.0"
+}
