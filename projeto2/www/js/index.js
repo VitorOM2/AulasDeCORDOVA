@@ -18,7 +18,6 @@ var app = {
 
     //Função que tira foto
     tirarFoto: function(){
-
         if (!navigator.camera){
             alert ("Plugin Cordova da camera não instalado","Erro!!!");
             return;
@@ -38,16 +37,16 @@ var app = {
         let options2 =
         {
             quality: 50,
-            destinationType: camera.destinationType.DATA_URL,
+            destinationType: Camera.DestinationType.DATA_URL,
             allowEdit:true,
             SavePhotoAlbum: false,
             cameraDirection: 1,
-            sourceType: camera.pictureSourceType.CAMERA
+            sourceType: Camera.PictureSourceType.CAMERA
         };
 
-        navigator.cameragetpicture(
+        navigator.camera.getPicture(
             function(imgDATA){
-                var imgHtmlTag = document.getElementById("imgHtmlg");
+                var imgHtmlTag = document.getElementById("imgHtmlTag");
                 alert (imgHtmlTag);
                 imgHtmlTag.src = "data:image/jpeg;base64,"+imgData;
             },
