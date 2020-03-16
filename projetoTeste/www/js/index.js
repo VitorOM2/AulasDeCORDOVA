@@ -28,8 +28,31 @@ var app = {
         }
 
         //OPÇÕES
-        
+        let options1 =
+        {
+            quality: 50,
+            destinationType: Camera.DestinationType.DATA_URL,
+            allowEdit:true,
+            SavePhotoAlbum: true,
+            cameraDirection: 1,
+            sourceType: Camera.PictureSourceType.CAMERA
+        };
+
+        navigator.camera.getPicture(
+            function(imgDATA){
+                var imgHtmlTag = document.getElementById("imgHtmlTag");
+                alert (imgHtmlTag);
+                imgHtmlTag.src = "data:image/jpeg;base64,"+imgData;
+            },
+            function(e) {
+                alert (e);
+                alert ('Plugin Camera Instalado, mas Get picture falhou', 'Error');
+            },
+        options1);
+
+        return false;
     }
+
 };
 
 app.initialize();
