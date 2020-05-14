@@ -1,3 +1,0 @@
-meuappmobile/node_modules
-meuappmobile/platforms/
-meuappmobile/plugins/
