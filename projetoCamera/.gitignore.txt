@@ -1,0 +1,3 @@
+projetoCamera/node_modules
+projetoCamera/platforms/
+projetoCamera/plugins/

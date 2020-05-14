@@ -1,0 +1,3 @@
+projeto2/node_modules
+projeto2/platforms/
+projeto2/plugins/

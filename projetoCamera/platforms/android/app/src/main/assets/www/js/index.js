@@ -4,30 +4,24 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
-    onDeviceReady: function() {
-        var botaoFoto = document.getElementById("botaoFoto");//Variável para reconhecer o botão de tirar foto
-        botaoFoto.addEventListener('click',this.tirarFoto);//Cria um evento que o botão ao ser clicado a camera é ligada
+    onDeviceReady: function() 
+    {
+        var btnTirarFoto = document.getElementById("botaoFoto")
+        btnTirarFoto.addEventListener('click',this.tirarFoto);
 
-        //THIS = tirar foto
-        this.pictureSource=navigator.camera.pictureSourceType;//Define a fonte da foto
-        this.destinationType=navigator.camera.destinationType;//Define o destino da foto
+        this.pictureSource=navigator.camera.pictureSourceType;
+        this.destinationType=navigator.camera.destinationType;
 
-        //DIR = Imprime o objeto
-        console.dir (this.pictureSource);
-        console.dir (this.destinationType);
-
+        console.dir(this.pictureSource);
+        console.dir(this.destinationType);       
     },
 
-    //Função para tirar e coletar a foto
+    //Função que tira foto
     tirarFoto: function(){
-
-        //Se não encontrar o plugin da camera
-        if (!navigator.camera)
-        {
-            alert ("Plugin da camera não instalado")
+        if (!navigator.camera){
+            alert ("Plugin Cordova da camera não instalado","Erro!!!");
+            return;
         }
-
-        //OPÇÕES
         let options1 =
         {
             quality: 50,

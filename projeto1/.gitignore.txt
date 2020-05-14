@@ -1,0 +1,3 @@
+projeto1/node_modules
+projeto1/platforms/
+projeto1/plugins/
